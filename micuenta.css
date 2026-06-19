@@ -1,0 +1,232 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+:root{
+    --espresso:#4A2C2A;
+    --cream:#F3E6D4;
+    --caramel:#C78C55;
+    --mocha:#8B5E3C;
+    --latte:#D5BBA6;
+    --amber:#DFAE52;
+}
+
+body{
+    background-color:var(--cream);
+}
+
+
+
+header{
+    background-color:var(--espresso);
+    color:white;
+    padding:20px 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:38px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:var(--amber);
+}
+
+
+
+.contenedor{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:50px;
+    padding:40px;
+    flex-wrap:wrap;
+}
+
+
+
+.card{
+    width:380px;
+    min-height:560px;
+
+    background-color:var(--latte);
+
+    padding:25px;
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.card h2{
+    text-align:center;
+    color:var(--espresso);
+
+    font-size:28px;
+
+    border-bottom:2px solid var(--mocha);
+
+    padding-bottom:12px;
+    margin-bottom:20px;
+}
+
+
+
+.foto-perfil{
+    width:90px;
+    height:90px;
+
+    margin:0 auto 15px;
+
+    border-radius:50%;
+    border:3px solid var(--mocha);
+
+    background-color:var(--cream);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:40px;
+}
+
+
+
+.bienvenida{
+    text-align:center;
+    color:var(--espresso);
+
+    font-size:14px;
+    line-height:1.4;
+
+    margin-bottom:18px;
+}
+
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    color:var(--espresso);
+    font-weight:bold;
+
+    margin-top:8px;
+    margin-bottom:4px;
+
+    font-size:16px;
+}
+
+input{
+    padding:10px;
+
+    border:2px solid var(--mocha);
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:14px;
+}
+
+input:focus{
+    border-color:var(--amber);
+}
+
+
+
+button{
+    margin-top:18px;
+
+    padding:12px;
+
+    border:none;
+    border-radius:8px;
+
+    background-color:var(--caramel);
+
+    color:white;
+
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background-color:var(--mocha);
+}
+
+button:active{
+    background-color:var(--amber);
+}
+
+
+
+.olvido{
+    text-align:center;
+    margin-top:12px;
+}
+
+.olvido a{
+    color:var(--espresso);
+    text-decoration:none;
+    font-size:14px;
+}
+
+.olvido a:hover{
+    color:var(--mocha);
+}
+
+.registro{
+    text-align:center;
+    margin-top:15px;
+    font-size:15px;
+}
+
+.registro a{
+    color:var(--espresso);
+    font-weight:bold;
+}
+
+.registro a:hover{
+    color:var(--mocha);
+}
+
+
+
+footer{
+    margin-top:20px;
+
+    background-color:var(--espresso);
+    color:white;
+
+    text-align:center;
+
+    padding:12px;
+
+    font-size:14px;
+}
