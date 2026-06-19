@@ -3,11 +3,18 @@
     margin: 0;
     padding: 0;
 }
-
+:root{
+    --espresso:#4A2C2A;
+    --cream:#F3E6D4;
+    --caramel:#C78C55;
+    --mocha:#8B5E3C;
+    --latte:#D5BBA6;
+    --amber:#DFAE52;
+}
 body{
     font-family:'Segoe UI', sans-serif;
     min-height: 100vh;
-    background-color: #f3e6d4;
+    background-color:var(--cream);
 }
 
 header{
@@ -17,15 +24,16 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color:#d5bba6;
+     background-color:var(--espresso);
+    color:white;
     height: 15dvh;
     padding: 20px 40px;
     z-index: 10000;
 }
 
 h1{
-    font-size: 2rem;
-    color:white;
+font-size: 2rem;
+    color:white;    
 }
 
 .header__nav-list{
@@ -42,7 +50,7 @@ h1{
 }
 
 .header__nav-item a:hover{
-    color: #4a2c2a;
+    color:var(--amber);
 }
 
 
@@ -76,6 +84,8 @@ footer{
     text-align: center;
     padding: 20px;
     font-weight: bold;
+    background-color:var(--espresso);
+    color:white;
 }
 .contenedor__catalogo{
     display: flex;
@@ -97,7 +107,8 @@ footer{
    }
    .contenedor__catalogo_items:hover{
     transform: scale(1.11);
-    box-shadow: #c78c55 0px 8px 20px;
+    background-color:var(--caramel);
+    box-shadow:#C78C55 0px 8px 20px;
 }
 .catalogo_imagen{
     width: 100%;
